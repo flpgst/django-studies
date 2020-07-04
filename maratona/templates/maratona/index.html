@@ -1,0 +1,12 @@
+<h1>Maratona FullCycle 3.0</h1>
+<i>#eumecomprometo</i>
+{% if class_list %}
+  <ul>
+  {% for class in class_list %}
+    <li>{{ class.nome }} - {{class.data|date}}</li>
+    <br />
+  {% endfor %}
+  </ul>
+{% else %}
+  <p> Sem aulas disponíveis</p>
+{% endif %}
